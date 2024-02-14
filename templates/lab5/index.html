@@ -1,0 +1,26 @@
+<html>
+<body>
+ 
+    <h1>Feedback Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>
+        if the form is valid the message will be here: {{ my_message }}
+    </p>
+
+    {% if True %}
+    the if block evaluated to True
+    {% else %}
+    the if block evaluated to false
+    {% endif %}
+
+</body>
+</html>
+
+
+
+
